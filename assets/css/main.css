@@ -47,6 +47,7 @@ li {
   width: 100%;
   background-color: var(--white);
   padding: 25px 0;
+  z-index: 100;
 }
 .header__top--main {
   max-width: 90%;
