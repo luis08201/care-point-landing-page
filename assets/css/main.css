@@ -343,4 +343,108 @@ li {
 }
 .service__middle--item:nth-child(4) {
   grid-area: itemFour;
+}
+
+.about {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "itemOne" "itemTwo";
+  gap: 25px;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "itemOne itemTwo";
+  }
+}
+.about__work {
+  grid-area: itemOne;
+}
+.about__work--top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.about__work--secondheading {
+  font-size: 32px;
+}
+.about__work--paragraph {
+  font-size: 12px;
+  line-height: 20px;
+}
+.about__work--middle {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "itemOne" "itemTwo";
+  gap: 25px;
+}
+@media screen and (min-width: 768px) {
+  .about__work--middle {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "itemOne itemTwo";
+  }
+}
+.about__work--item:first-child {
+  grid-area: itemOne;
+}
+.about__work--item:last-child {
+  grid-area: itemTwo;
+}
+.about__work--img {
+  display: block;
+  width: 100%;
+}
+.about__work--description {
+  margin-top: 5px;
+}
+.about__creativity {
+  grid-area: itemTwo;
+}
+.about__creativity--top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.about__creativity--secondheading {
+  font-size: 32px;
+}
+.about__creativity--paragraph {
+  font-size: 12px;
+  line-height: 20px;
+}
+.about__creativity--middle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about__creativity--button {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+  border-radius: 12px;
+  letter-spacing: 1px;
+  align-self: flex-start;
+}
+.about__creativity--item {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 45px;
 }/*# sourceMappingURL=main.css.map */
