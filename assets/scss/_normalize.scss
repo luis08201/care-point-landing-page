@@ -1,20 +1,98 @@
 *,
 *::before,
-*::after{
-    padding:0;
-    margin:0;
+*::after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-:root{
-    --skyblue:#43b9dc;
-    --green:#34d3b4;
-    --black:#222222;
-    --gradient:linear-gradient(#43b9dc, #34d3b4);
+:root {
+    --skyblue: #43b9dc;
+    --green: #34d3b4;
+    --black: #222222;
+    --white: #fff;
+    --gradient: linear-gradient(#43b9dc, #34d3b4);
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+@mixin grid-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "itemOne"
+        "itemTwo";
+    gap: 25px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo";
+    }
+}
+
+@mixin grid-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "itemOne"
+        "itemTwo"
+        "itemThree"
+        "itemFour";
+    gap: 25px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo"
+            "itemThree itemFour";
+    }
+
+    @media screen and (min-width:992px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo itemThree itemFour";
+    }
+}
+
+@mixin grid-6 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "itemOne"
+        "itemTwo"
+        "itemThree"
+        "itemFour"
+        "itemFive"
+        "itemSix";
+    gap: 25px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo"
+            "itemThree itemFour"
+            "itemFive itemSix";
+    }
+
+    @media screen and (min-width:992px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo itemThree"
+            "itemFour itemFive itemSix";
+    }
 }

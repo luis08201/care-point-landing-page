@@ -9,13 +9,29 @@
 }
 
 :root {
-  --skyblue:#43b9dc;
-  --green:#34d3b4;
-  --black:#222222;
-  --gradient:linear-gradient(#43b9dc, #34d3b4);
+  --skyblue: #43b9dc;
+  --green: #34d3b4;
+  --black: #222222;
+  --white: #fff;
+  --gradient: linear-gradient(#43b9dc, #34d3b4);
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.blueText {
+  color: var(--skyblue);
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */
