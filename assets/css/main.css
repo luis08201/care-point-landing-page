@@ -58,7 +58,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .header__top--main {
-    max-width: 1100px;
+    max-width: 1200px;
   }
 }
 .header__top--firstheading {
@@ -159,7 +159,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .header__home--main {
-    max-width: 1100px;
+    max-width: 1200px;
   }
 }
 .header__home--block {
@@ -257,4 +257,90 @@ li {
     border: none;
     color: var(--skyblue);
   }
+}
+
+.service {
+  background-image: var(--gradient);
+}
+.service__main {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  color: var(--white);
+}
+@media screen and (min-width: 1200px) {
+  .service__main {
+    max-width: 1200px;
+  }
+}
+.service__top {
+  margin-bottom: 37px;
+  text-align: center;
+}
+.service__top--secondheading {
+  color: var(--white);
+  font-size: 32px;
+}
+.service__middle {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "itemOne" "itemTwo" "itemThree" "itemFour";
+  gap: 25px;
+}
+@media screen and (min-width: 768px) {
+  .service__middle {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "itemOne itemTwo" "itemThree itemFour";
+  }
+}
+@media screen and (min-width: 992px) {
+  .service__middle {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "itemOne itemTwo itemThree itemFour";
+  }
+}
+.service__middle--picture i {
+  font-size: 28px;
+}
+.service__middle--middleheading {
+  color: var(--white);
+  font-size: 22px;
+}
+.service__middle--description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.service__middle--paragraph {
+  line-height: 24px;
+  font-size: 15px;
+}
+.service__middle--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 22px;
+  border-radius: 5px;
+  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.5s linear;
+}
+.service__middle--item:hover, .service__middle--item:focus {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+}
+.service__middle--item:nth-child(1) {
+  grid-area: itemOne;
+}
+.service__middle--item:nth-child(2) {
+  grid-area: itemTwo;
+}
+.service__middle--item:nth-child(3) {
+  grid-area: itemThree;
+}
+.service__middle--item:nth-child(4) {
+  grid-area: itemFour;
 }/*# sourceMappingURL=main.css.map */
