@@ -63,7 +63,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .header__top--main {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 .header__top--firstheading {
@@ -177,7 +177,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .header__home--main {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 .header__home--block {
@@ -289,7 +289,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .service__main {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 .service__top {
@@ -376,7 +376,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .about {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -445,7 +445,7 @@ li {
 .about__creativity--middle {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 .about__creativity--button {
   background-color: var(--green);
@@ -475,7 +475,12 @@ li {
   overflow: hidden;
 }
 .about__creativity--item.active .about__creativity--description {
-  height: 90px;
+  height: 85px;
+}
+@media screen and (min-width: 992px) {
+  .about__creativity--item.active .about__creativity--description {
+    height: 66px;
+  }
 }
 
 .gallery {
@@ -489,7 +494,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .gallery__main {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 .gallery__top {
@@ -549,7 +554,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .team__main {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 .team__top {
@@ -638,7 +643,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .footer__top {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -745,7 +750,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .footer__bottom {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 .footer__bottom--cta {

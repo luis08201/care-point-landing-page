@@ -406,7 +406,7 @@
         &--middle {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 5px;
         }
 
         &--button {
@@ -440,10 +440,17 @@
         }
 
         &--item.active &--description {
-            height: 90px;
+            height: 85px;
         }
     }
 
+    @media screen and (min-width:992px){
+        &__creativity{
+            &--item.active &--description {
+                    height: 66px;
+                }
+        }
+    }
 }
 
 .gallery {
