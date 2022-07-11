@@ -451,7 +451,7 @@ li {
 }
 
 .gallery {
-  background-color: var(--green);
+  background-color: rgba(52, 211, 179, 0.7058823529);
 }
 .gallery__main {
   max-width: 90%;
