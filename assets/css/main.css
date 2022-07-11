@@ -441,7 +441,7 @@ li {
 .about__creativity--middle {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 .about__creativity--button {
   background-color: var(--green);
@@ -453,14 +453,25 @@ li {
   border-radius: 12px;
   letter-spacing: 1px;
   align-self: flex-start;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 .about__creativity--item {
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 45px;
+  gap: 0;
+}
+.about__creativity--description {
+  height: 0;
+  font-size: 12px;
+  line-height: 20px;
+  transition: 0.5s linear;
+  overflow: hidden;
+}
+.about__creativity--item.active .about__creativity--description {
+  height: 90px;
 }
 
 .gallery {

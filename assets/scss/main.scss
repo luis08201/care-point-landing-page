@@ -57,21 +57,21 @@
             width: 20px;
             height: 2px;
             border-radius: 5px;
-            transition:0.5s linear;
+            transition: 0.5s linear;
         }
 
         &--burger.active &--bar:nth-child(1) {
             rotate: 45deg;
-            transform-origin:10% 90%;
+            transform-origin: 10% 90%;
         }
 
         &--burger.active &--bar:nth-child(2) {
-            opacity:0;
+            opacity: 0;
         }
 
         &--burger.active &--bar:nth-child(3) {
             rotate: -45deg;
-            transform-origin:0% -45%;
+            transform-origin: 0% -45%;
         }
     }
 
@@ -399,7 +399,7 @@
         &--middle {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
         }
 
         &--button {
@@ -412,6 +412,8 @@
             border-radius: 12px;
             letter-spacing: 1px;
             align-self: flex-start;
+            margin-bottom: 10px;
+            cursor:pointer;
         }
 
         &--item {
@@ -419,8 +421,19 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            height: 45px;
+            gap: 0;
+        }
+
+        &--description {
+            height: 0;
+            font-size: 12px;
+            line-height: 20px;
+            transition: 0.5s linear;
+            overflow: hidden;
+        }
+
+        &--item.active &--description {
+            height: 90px;
         }
     }
 
