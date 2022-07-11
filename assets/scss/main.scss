@@ -411,9 +411,10 @@
 
 .gallery {
     background-color: var(--green);
+
     &__main {
         @include content-width;
-        padding:50px ;
+        padding: 50px;
     }
 
     &__top {
@@ -426,13 +427,97 @@
         }
     }
 
-    &__middle{
-        &--img{
-            display:block;
-            width:100%;
+    &__middle {
+        &--img {
+            display: block;
+            width: 100%;
         }
 
         @include grid-6;
+
+        &--item {
+            &:nth-child(1) {
+                grid-area: itemOne;
+            }
+
+            &:nth-child(2) {
+                grid-area: itemTwo;
+            }
+
+            &:nth-child(3) {
+                grid-area: itemThree;
+            }
+
+            &:nth-child(4) {
+                grid-area: itemFour;
+            }
+
+            &:nth-child(5) {
+                grid-area: itemFive;
+            }
+
+            &:nth-child(6) {
+                grid-area: itemSix;
+            }
+        }
+    }
+}
+
+.team {
+    &__main {
+        @include content-width;
+        margin: 100px auto;
+    }
+
+    &__top {
+        margin-bottom: 37px;
+        text-align: center;
+
+        &--secondheading {
+            font-size: 32px;
+        }
+    }
+
+    &__middle{
+        @include grid-4;
+
+        &--img{
+            display:block;
+            width:240px;
+            margin:0 auto;
+        }
+
+        &--description{
+            margin-top: 10px;
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &--paragraph{
+            font-size: 12px;
+        }
+
+        &--socialnetwork{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:15px;
+        }
+
+        &--sc i{
+            font-size: 20px;
+            color:var(--skyblue);
+            transition:0.5s linear;
+        }
+
+        &--sc:hover i,
+        &--sc:focus i{
+            filter:drop-shadow(1px 1px 2px var(--skyblue));
+        }
 
         &--item{
             &:nth-child(1){
@@ -446,12 +531,6 @@
             }
             &:nth-child(4){
                 grid-area:itemFour;
-            }
-            &:nth-child(5){
-                grid-area:itemFive;
-            }
-            &:nth-child(6){
-                grid-area:itemSix;
             }
         }
     }
