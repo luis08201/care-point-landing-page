@@ -48,6 +48,10 @@ li {
   background-color: var(--white);
   padding: 25px 0;
   z-index: 100;
+  transition: 0.5s linear;
+}
+.header__top.sticky {
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
 }
 .header__top--main {
   max-width: 90%;
