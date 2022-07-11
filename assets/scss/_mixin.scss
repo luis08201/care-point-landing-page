@@ -3,6 +3,89 @@
     text-transform: capitalize;
 }
 
+@mixin grid-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "itemOne"
+        "itemTwo";
+    gap: 25px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo";
+    }
+}
+
+@mixin grid-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "itemOne"
+        "itemTwo"
+        "itemThree";
+    gap: 25px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo itemThree";
+    }
+}
+
+@mixin grid-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "itemOne"
+        "itemTwo"
+        "itemThree"
+        "itemFour";
+    gap: 25px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo"
+            "itemThree itemFour";
+    }
+
+    @media screen and (min-width:992px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo itemThree itemFour";
+    }
+}
+
+@mixin grid-6 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "itemOne"
+        "itemTwo"
+        "itemThree"
+        "itemFour"
+        "itemFive"
+        "itemSix";
+    gap: 25px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo"
+            "itemThree itemFour"
+            "itemFive itemSix";
+    }
+
+    @media screen and (min-width:992px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "itemOne itemTwo itemThree"
+            "itemFour itemFive itemSix";
+    }
+}
+
 @mixin content-width{
     max-width:90%;
     width:100%;
